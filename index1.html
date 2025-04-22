@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教育信息查询</title>
+    <style>
+        body {
+            font-family: 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #1aba8b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .back-arrow {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .blue-card {
+            background-color: #4fb6d6;
+            color: white;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .green-card {
+            background-color: #1aba8b;
+            color: white;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .info-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            background-color: #1aba8b;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .link {
+            color: #1aba8b;
+            text-decoration: none;
+        }
+
+        .icon-group {
+            text-align: right;
+        }
+
+        .degree-section {
+            text-align: center;
+            color: #666;
+            padding: 20px 15px;
+        }
+
+        .show-info {
+            color: #1aba8b;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="back-arrow">←</span>
+        高等教育信息
+    </div>
+
+    <div class="blue-card">
+        <div>
+            <div style="font-weight: bold;">专业推荐</div>
+            <div style="font-size: 12px;">本校优势专业特色专业</div>
+        </div>
+        <div class="icon-group">
+            <span>👍</span>
+            <span>🎓</span>
+            <span>📊</span>
+        </div>
+    </div>
+
+    <div class="info-header">
+        <div>学籍信息 (1)</div>
+        <div><span class="link">空试绑定</span></div>
+    </div>
+
+    <div class="green-card">
+        <div>云南财经大学</div>
+        <div style="display: flex; justify-content: space-between;">
+            <div>广告学 | 全日制</div>
+            <div class="tag">本科</div>
+        </div>
+    </div>
+
+    <div class="info-header">
+        <div>学历信息 (1)</div>
+        <div><span class="link">空试绑定</span></div>
+    </div>
+
+    <div class="info-header">
+        <div>学位信息</div>
+        <div><span class="link">空试绑定</span></div>
+    </div>
+
+    <div class="card">
+        <div class="degree-section">
+            您还未绑定学位信息，可以使用"尝试绑定学位"功能绑定您的学位
+        </div>
+        <div class="show-info">
+            提示信息 ∨
+        </div>
+    </div>
+
+    <div class="info-header">
+        <div>考研信息</div>
+    </div>
+
+    <div class="blue-card" style="justify-content: flex-start;">
+        云南财经大学
+    </div>
+
+    <script>
+        // 获取页面上所有带有类名为"header"的元素
+        const headerElement = document.querySelector('.header');
+
+        // 为该元素添加点击事件监听器
+        headerElement.addEventListener('click', function() {
+            // 当点击"高等教育信息"时，跳转到指定的页面
+            window.location.href = "education_info.html"; // 这里填写您要跳转的实际页面地址
+        });
+    </script>
+</body>
+</html>
